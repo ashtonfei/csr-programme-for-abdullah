@@ -43,7 +43,7 @@
                           :required="item.required"
                           :disabled="form.submitting"
                           @blur="validate(item)"
-                          @change="validate(item)"
+                          @md-selected="validate(item)"
                           md-dense>
                         <md-option 
                             v-for="(option, i) in item.options"
@@ -63,7 +63,7 @@
                           :required="item.required"
                           :disabled="form.submitting"
                           @blur="validate(item)"
-                          @change="validate(item)"
+                          @md-selected="validate(item)"
                           md-dense
                           multiple>
                         <md-option 
